@@ -1,0 +1,31 @@
+{
+  "name": "wp_native_apis",
+  "version": "768f31e70644c56f00ea353f4f82148790c08adb",
+  "artifacts": [
+    {
+      "phpVersion": "8.0",
+      "sourcePath": "wp_native_apis-php8.0-jspi.so"
+    },
+    {
+      "phpVersion": "8.1",
+      "sourcePath": "wp_native_apis-php8.1-jspi.so"
+    },
+    {
+      "phpVersion": "8.2",
+      "sourcePath": "wp_native_apis-php8.2-jspi.so"
+    },
+    {
+      "phpVersion": "8.3",
+      "sourcePath": "wp_native_apis-php8.3-jspi.so"
+    },
+    {
+      "phpVersion": "8.4",
+      "sourcePath": "wp_native_apis-php8.4-jspi.so"
+    },
+    {
+      "phpVersion": "8.5",
+      "sourcePath": "wp_native_apis-php8.5-jspi.so"
+    }
+  ],
+  "mode": "php-extension"
+}

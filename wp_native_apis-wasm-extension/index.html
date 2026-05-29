@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>wp_native_apis PHP.wasm Extension Releases</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --accent: #2563eb;
+      --muted: #5f6673;
+      --border: color-mix(in srgb, currentColor 18%, transparent);
+      --panel: color-mix(in srgb, currentColor 5%, transparent);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    body {
+      margin: 0;
+      line-height: 1.55;
+    }
+    header,
+    main,
+    footer {
+      max-width: 64rem;
+      margin: 0 auto;
+      padding: 1.25rem 1.5rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    header a { color: inherit; text-decoration: none; }
+    header nav { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .hero {
+      padding: 2rem 0;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin: 0 0 1rem;
+    }
+    h2 { margin-top: 2rem; }
+    .lede {
+      max-width: 48rem;
+      font-size: 1.05rem;
+      color: var(--muted);
+    }
+    .cta-row,
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 1.25rem 0;
+    }
+    .button,
+    .pill {
+      display: inline-block;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.62rem 1rem;
+      text-decoration: none;
+      color: inherit;
+      font-weight: 600;
+    }
+    .button.primary {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+    .notice {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--panel);
+    }
+    .notice { padding: 1rem 1.1rem; }
+    .benchmark-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+    .benchmark-chip {
+      display: block;
+      font-size: 0.92rem;
+    }
+    .benchmark-chip strong {
+      display: inline-block;
+      min-width: 3rem;
+    }
+    .benchmark-chip small {
+      display: block;
+      color: var(--muted);
+    }
+    .badge {
+      display: inline-block;
+      border-radius: 999px;
+      background: var(--accent);
+      color: white;
+      padding: 0.18rem 0.55rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+    .muted {
+      color: var(--muted);
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    th,
+    td {
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { font-size: 0.85rem; }
+    .latest-row {
+      background: color-mix(in srgb, var(--accent) 8%, transparent);
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 0.92em;
+    }
+    a { color: var(--accent); }
+    footer { color: var(--muted); }
+    @media (max-width: 760px) {
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../"><strong>PHP Toolkit</strong></a>
+    <nav>
+      <a href="../native-apis.html">Native APIs docs</a>
+      <a href="https://github.com/fredrikekelund/php-toolkit">GitHub</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Native APIs WASM releases for Playground</h1>
+      <p>
+        Published PHP.wasm builds of the experimental <code>wp_native_apis</code> extension for WordPress Playground.
+        Use this page to test the latest build, pin an immutable manifest, or inspect release artifacts.
+      </p>
+      <div class="cta-row">
+        <a class="button primary" href="https://playground.wordpress.net/?php=8.5&amp;php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&amp;blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json">Test in Playground →</a>
+        <a class="button" href="../native-apis.html">Read the docs</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>PHP.wasm builds for Playground Web and CLI</h2>
+    </section>
+
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Released on</th>
+            <th>Playground PHP versions</th>
+            <th>CI speed snapshot</th>
+            <th>Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+  <tr class="latest-row">
+    <td><span>2026-05-29</span><br><span class="badge">Latest</span></td>
+    <td>8.0, 8.1, 8.2, 8.3, 8.4, 8.5</td>
+    <td><div class="benchmark-list">
+    <span class="benchmark-chip">
+      <strong>135.46×</strong>
+      URL-in-text scan
+      <small>PHP 2.01 s · native 14.9 ms</small>
+    </span>
+  
+    <span class="benchmark-chip">
+      <strong>7.41×</strong>
+      HTML fragment processor
+      <small>PHP 552.9 ms · native 74.6 ms</small>
+    </span>
+  
+    <span class="benchmark-chip">
+      <strong>6.88×</strong>
+      HTML tag scan
+      <small>PHP 122.8 ms · native 17.9 ms</small>
+    </span>
+  </div></td>
+    <td><a href="https://playground.wordpress.net/?php=8.5&amp;php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&amp;blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json">Test latest PHP</a> · <a href="https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/manifest.json">Manifest</a> · Test: <a href="https://playground.wordpress.net/?php=8.0&amp;php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&amp;blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json">PHP 8.0</a>, <a href="https://playground.wordpress.net/?php=8.1&amp;php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&amp;blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json">PHP 8.1</a>, <a href="https://playground.wordpress.net/?php=8.2&amp;php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&amp;blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json">PHP 8.2</a>, <a href="https://playground.wordpress.net/?php=8.3&amp;php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&amp;blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json">PHP 8.3</a>, <a href="https://playground.wordpress.net/?php=8.4&amp;php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&amp;blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json">PHP 8.4</a>, <a href="https://playground.wordpress.net/?php=8.5&amp;php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&amp;blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json">PHP 8.5</a> · Download: <a href="https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/wp_native_apis-php8.0-jspi.so">PHP 8.0</a>, <a href="https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/wp_native_apis-php8.1-jspi.so">PHP 8.1</a>, <a href="https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/wp_native_apis-php8.2-jspi.so">PHP 8.2</a>, <a href="https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/wp_native_apis-php8.3-jspi.so">PHP 8.3</a>, <a href="https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/wp_native_apis-php8.4-jspi.so">PHP 8.4</a>, <a href="https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/wp_native_apis-php8.5-jspi.so">PHP 8.5</a> · <a href="https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/SHA256SUMS">SHA256</a></td>
+  </tr>
+
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Native PHP Extension Builds are coming soon</h2>
+      <p>Want to build it today? Follow the <a href="https://fredrikekelund.github.io/php-toolkit/native-php-extension.html">native PHP compilation guide</a>.</p>
+    </section>
+  </main>
+  <footer>
+    Machine-readable release history: <a href="https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/releases.json"><code>releases.json</code></a>.
+  </footer>
+</body>
+</html>

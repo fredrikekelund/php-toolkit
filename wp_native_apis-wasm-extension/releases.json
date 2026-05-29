@@ -1,0 +1,110 @@
+[
+  {
+    "version": "768f31e70644c56f00ea353f4f82148790c08adb",
+    "name": "wp_native_apis",
+    "phpVersions": [
+      "8.0",
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.5"
+    ],
+    "artifacts": [
+      {
+        "phpVersion": "8.0",
+        "sourcePath": "wp_native_apis-php8.0-jspi.so",
+        "url": "https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/wp_native_apis-php8.0-jspi.so",
+        "testInPlayground": "https://playground.wordpress.net/?php=8.0&php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json"
+      },
+      {
+        "phpVersion": "8.1",
+        "sourcePath": "wp_native_apis-php8.1-jspi.so",
+        "url": "https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/wp_native_apis-php8.1-jspi.so",
+        "testInPlayground": "https://playground.wordpress.net/?php=8.1&php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json"
+      },
+      {
+        "phpVersion": "8.2",
+        "sourcePath": "wp_native_apis-php8.2-jspi.so",
+        "url": "https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/wp_native_apis-php8.2-jspi.so",
+        "testInPlayground": "https://playground.wordpress.net/?php=8.2&php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json"
+      },
+      {
+        "phpVersion": "8.3",
+        "sourcePath": "wp_native_apis-php8.3-jspi.so",
+        "url": "https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/wp_native_apis-php8.3-jspi.so",
+        "testInPlayground": "https://playground.wordpress.net/?php=8.3&php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json"
+      },
+      {
+        "phpVersion": "8.4",
+        "sourcePath": "wp_native_apis-php8.4-jspi.so",
+        "url": "https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/wp_native_apis-php8.4-jspi.so",
+        "testInPlayground": "https://playground.wordpress.net/?php=8.4&php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json"
+      },
+      {
+        "phpVersion": "8.5",
+        "sourcePath": "wp_native_apis-php8.5-jspi.so",
+        "url": "https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/wp_native_apis-php8.5-jspi.so",
+        "testInPlayground": "https://playground.wordpress.net/?php=8.5&php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json"
+      }
+    ],
+    "publishedAt": "2026-05-29T19:20:56Z",
+    "manifest": "https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/manifest.json",
+    "checksums": "https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/SHA256SUMS",
+    "commit": "https://github.com/fredrikekelund/php-toolkit/commit/768f31e70644c56f00ea353f4f82148790c08adb",
+    "workflowRun": "https://github.com/fredrikekelund/php-toolkit/actions/runs/26655623816",
+    "benchmark": "https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/benchmarks/benchmark.json",
+    "benchmarkSummaryUrl": "https://fredrikekelund.github.io/php-toolkit/wp_native_apis-wasm-extension/768f31e70644c56f00ea353f4f82148790c08adb/benchmarks/benchmark-summary.json",
+    "benchmarkSummary": [
+      {
+        "name": "url-in-text-processor",
+        "label": "URL-in-text scan",
+        "component": "URL-in-text",
+        "iterations": 50,
+        "operations": 18000,
+        "phpWallSeconds": 2.014136,
+        "nativeWallSeconds": 0.014869,
+        "speedup": 135.46,
+        "phpClass": "WordPress\\DataLiberation\\URL\\URLInTextProcessor",
+        "nativeClass": "WordPress\\DataLiberation\\URL\\NativeURLInTextProcessor"
+      },
+      {
+        "name": "html-processor",
+        "label": "HTML fragment processor",
+        "component": "HTML",
+        "iterations": 50,
+        "operations": 72200,
+        "phpWallSeconds": 0.552867,
+        "nativeWallSeconds": 0.074624,
+        "speedup": 7.41,
+        "phpClass": "WP_HTML_Processor",
+        "nativeClass": "WP_HTML_Native_Processor"
+      },
+      {
+        "name": "html-tag-processor",
+        "label": "HTML tag scan",
+        "component": "HTML",
+        "iterations": 50,
+        "operations": 66200,
+        "phpWallSeconds": 0.122824,
+        "nativeWallSeconds": 0.01786,
+        "speedup": 6.88,
+        "phpClass": "WP_HTML_Tag_Processor",
+        "nativeClass": "WP_HTML_Native_Tag_Processor"
+      },
+      {
+        "name": "xml-processor",
+        "label": "XML processor scan",
+        "component": "XML",
+        "iterations": 50,
+        "operations": 48200,
+        "phpWallSeconds": 0.1675,
+        "nativeWallSeconds": 0.032522,
+        "speedup": 5.15,
+        "phpClass": "WordPress\\XML\\XMLProcessor",
+        "nativeClass": "WordPress\\XML\\NativeXMLProcessor"
+      }
+    ],
+    "testInPlayground": "https://playground.wordpress.net/?php=8.5&php-extension=https%3A%2F%2Ffredrikekelund.github.io%2Fphp-toolkit%2Fwp_native_apis-wasm-extension%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fmanifest.json&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Ffredrikekelund%2Fphp-toolkit%2F768f31e70644c56f00ea353f4f82148790c08adb%2Fextensions%2Fnative-apis%2Fplayground%2Fblueprint.json"
+  }
+]
